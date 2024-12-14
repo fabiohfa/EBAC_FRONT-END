@@ -5,7 +5,7 @@ let formJaSubmetido = false;
 document.querySelector('.indicador').style.display = 'none';
 
 function BmaiorA(valorA,valorB){
-    return (parseFloat(valorB) >= parseFloat(valorA));
+    return (parseFloat(valorB) > parseFloat(valorA));
 }
 
 form.addEventListener('submit',function(e){
