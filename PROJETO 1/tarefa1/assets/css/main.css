@@ -16,10 +16,17 @@ li{
     display: inline;
 }
 
-.container{
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
+header{
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+
+header li{
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 header, footer{
@@ -30,6 +37,17 @@ header, footer{
 a{
     text-decoration: none;
     color: var(--white-color);
+}
+
+.container, .container-contact{
+    max-width: 960px;
+    width: 100%;
+    margin: 8px auto;
+}
+
+#blog .b1{
+    padding-top: 38px;
+
 }
 
 header .container,
@@ -45,8 +63,23 @@ section .container
     display: flex;
 }
 
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 img{
     width: 250px;
+}
+a img{
+    height: 28px;
+    width: auto;
+    margin-left: 16px;
+}
+
+.youtube{
+    background-color: var(--white-color);
 }
 
 #contact{
@@ -67,7 +100,12 @@ h2{
     font-size: 24px;
     color: var(--primary-color);
     margin: 24px 0;
-    text-align: center;
+}
+
+#contact h2{
+    display: block;
+    margin-bottom: 18px;
+    margin-top: 24px;
 }
 
 h3{
@@ -84,12 +122,10 @@ form{
 }
 
 input,
-textarea,
-button,
-.contact-methods{
+textarea {
     display: block;
     margin: 12px 0;
-    width:80%;
+    width:450px;
     height: 36px;
 }
 
@@ -99,6 +135,7 @@ button{
     border-radius:10%;
     cursor: pointer;
     width : 120px;
+    margin-bottom: 24px;
 }
 
 form input,
