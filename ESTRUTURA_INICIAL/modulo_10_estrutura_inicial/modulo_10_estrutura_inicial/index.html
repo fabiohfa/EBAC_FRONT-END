@@ -191,12 +191,12 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container" id="contato">
         <h2>Entre em contato</h2>
         <form action="">
           <div class="form-campo">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" />
+            <input type="text" id="nome" name="nome" placeholder="Nome"/>
           </div>
           <div class="form-campo">
             <label for="telefone">Telefone:</label>
@@ -259,18 +259,8 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/jquery.mask.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#carousel-imagens").slick({
-          autoplay: true,
-        });
-
-        $(".menu-hamburguer").click(function () {
-          $("nav").slideToggle();
-        });
-
-        $("#telefone").mask("(00) 0000-0000");
-      });
-    </script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
